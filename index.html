@@ -1,8 +1,26 @@
 <html>
   <head><title>My GitHub Page</title></head>
   <body>
-    <h1>Hello, I’m Rajendra!</h1>
-    <p>Welcome to my GitHub Page.</p>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DQy00000bJ2Tp',
+				'Aiims_Embedded_Service',
+				'https://ibirds-ad-dev-ed.develop.my.site.com/ESWAiimsEmbeddedService1761654505013',
+				{
+					scrt2URL: 'https://ibirds-ad-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://ibirds-ad-dev-ed.develop.my.site.com/ESWAiimsEmbeddedService1761654505013/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
   </body>
 </html>
 
